@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login verify | app-name</title>
+
+	<!-- Global stylesheets -->
+	<link href="assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="assets/js/jquery/jquery.min.js"></script>
+	<script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->	
+
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<!-- /theme JS files -->
+
+	<!-- Auto Focus On Next Input Field  -->
+	<script>
+		$(document).ready(function(){
+			$(":input").keyup(function () {
+				if (this.value.length == this.maxLength) {
+					$(this).next(':input').focus();
+				}
+			});              
+		});
+	</script>
+	<!--END Auto Focus On Next Input Field  -->
+
+</head>
+
+<body>
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Content area -->
+				<div class="content p-0">
+
+					<!-- Two col content -->
+					<div class="row g-0">
+
+						<!-- Ads box -->
+						<div class="col d-grid align-items-center justify-content-center ads">
+							<div data-include="advertisement"></div>
+						</div>
+						<!-- /ads box -->
+
+						<!-- Login content -->
+						<div class="col-lg-3 my-auto">
+
+							<div class="content p-5">
+								<div class="row">
+									<div class="col">
+										<a href="index.html">
+											<img src="assets/images/logo-app-name.svg" alt="app-name" class="w-50" />
+										</a>
+									</div>
+									<div class="col text-end">
+										<h1>Login verify</h1>
+									</div>
+								</div>
+								
+								<p class="mt-3 mb-5">Verificatie ID is gestuurd naar e-mailadres test@test.nl</p>
+
+								<form action="dashboard.html">
+									<div class="mb-3">
+										<label class="form-label">Verificatie ID <span class="text-danger">*</span></label>
+										<div class="container px-4">
+											<div class="row gx-5">
+												<input type="text" id="verificationID-1" value="" maxlength="1" class="col form-control text-center" />
+												<input type="text" id="verificationID-2" value="" maxlength="1" class="col form-control text-center" />
+												<input type="text" id="verificationID-3" value="" maxlength="1" class="col form-control text-center" />
+												<input type="text" id="verificationID-4" value="" maxlength="1" class="col form-control text-center" />
+												<input type="text" id="verificationID-5" value="" maxlength="1" class="col form-control text-center" />
+												<input type="text" id="verificationID-6" value="" maxlength="1" class="col form-control text-center" />
+											</div>
+										</div>
+									</div>
+
+									<input type="submit" class="btn btn-primary w-100" value="Login">
+								</form>
+				
+								<div class="mt-3 text-center">Geen code ontvangen? <a href="#">Opnieuw verzenden</a></div>
+							</div>
+						</div>
+						<!-- /login content -->
+
+					</div>
+					<!-- /two col content -->
+
+				</div>
+				<!-- /content area -->
+
+				<div data-include="footer"></div>
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+	
+	</div>
+	<!-- Page content -->
+</body>
+</html>

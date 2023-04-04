@@ -1,0 +1,21 @@
+.w-8px { width: 8px; }
+.h-8px { width: 8px; }
+
+
+.ads {
+    background-image: url(../images/demo/blog/2.jpg);
+    background-position: center -240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 60px);
+}
+@media only screen and (max-width: 991px) {
+    .ads { height: 100vh; }
+}
+
+@media only screen and (max-width: 767px) {
+   .navbar-footer .row { text-align: center; }
+   .navbar-footer .row ul.nav { display: inline-flex; }
+   .navbar-footer .row div { margin-bottom: 5px !important; }
+   .navbar-footer .row div:last-child { margin-bottom: auto !important; }
+}
